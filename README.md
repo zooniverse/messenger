@@ -16,7 +16,7 @@ Here are the pieces:
 
 ## Project
 
-A Panoptes project.  `Project#id` is consistent with Panoptes project ids.
+A Panoptes project.  `Project#id` is consistent with Panoptes project ids and should be set manually.
 
 #### Relationships
 
