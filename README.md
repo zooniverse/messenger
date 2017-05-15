@@ -5,10 +5,10 @@ review, accept, and reject consensus transcriptions. It authenticates with the
 [Panoptes API](https://zooniverse.org): only project owners and collaborators 
 are able to add and update transcriptions for their projects.
 
+It is called Messenger because early in the process of gene expresssion, the transcription 
+step results in 'messenger' RNA (mRNA) that is template for protien synthesis through translation.
 
-
-It is called Messenger because transcription is the first step in gene expression and 
-results in 'messenger' RNA (mRNA) before translation. So this is the next step!
+Transcription comes first, then the messenger, then a legible and useful result!
 
 
 Here are the pieces:
