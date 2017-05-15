@@ -19,13 +19,14 @@ gem 'pundit', "~> 1.1"
 gem 'panoptes-client', "~> 0.3"
 
 group :test do
-  gem 'webmock', '~> 2.3'
+  gem 'webmock', "~> 3.0"
   gem 'database_cleaner', "~> 1.6"
   gem 'faker', "~> 1.7"
   gem 'factory_girl_rails', "~> 4.8"
 end
 
 group :development, :test do
+  gem 'rspec', "~> 3.6"
   gem 'rspec-rails', "~> 3.6"
   gem 'rspec-its', "~> 1.2"
   gem 'pry', "~> 0.10"
