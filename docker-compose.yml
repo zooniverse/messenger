@@ -1,0 +1,30 @@
+postgres:
+  image: postgres
+  environment:
+    - "POSTGRES_USER=messenger"
+    - "POSTGRES_PASSWORD=messenger"
+  ports:
+    - "5432:5432"
+
+redis:
+  image: redis
+  ports:
+    - "6379:6379"
+
+messenger:
+  dockerfile: Dockerfile
+  build: ./
+  environment:
+    - "RAILS_ENV=docker_development"
+    - "RACK_ENV=docker_development"
+  links:
+    - postgres:pg
+    - redis:redis
+
+nginx:
+  dockerfile: Dockerfile.nginx
+  build: ./
+  ports:
+    - "3000:80"
+  links:
+    - messenger:messenger

@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 16
+  host: <%= ENV["MESSENGER_POSTGRES_1_PORT_5432_TCP_ADDR"] %>
+  username: messenger
+  password: messenger
+
+development:
+  <<: *default
+  database: messenger
+
+test:
+  <<: *default
+  database: messenger_test
+
+docker_development:
+  <<: *default
+  database: messenger

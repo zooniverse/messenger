@@ -1,0 +1,10 @@
+/.bundle
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+/.rvmrc
+/coverage
+**.orig
+.DS_Store
+/config/*.yml
