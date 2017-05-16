@@ -1,6 +1,6 @@
 FROM ruby:2.4.1
 
-ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y locales
 RUN locale-gen en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
