@@ -1,4 +1,4 @@
-FROM zooniverse/ruby:2.4.1
+FROM ruby:2.4.1
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN locale-gen en_US.UTF-8
