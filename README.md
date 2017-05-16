@@ -1,6 +1,6 @@
 # Messenger
 
-Messenger is a Rails API stores aggregated text transcriptions, allowing researchers to 
+Messenger is a Rails API that stores aggregated text transcriptions, allowing researchers to 
 review, accept, and reject consensus transcriptions. It authenticates with the 
 [Panoptes API](https://zooniverse.org): only project owners and collaborators 
 are able to add and update transcriptions for their projects.
