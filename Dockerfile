@@ -22,6 +22,8 @@ RUN cd /rails_app && \
 
 COPY ./ /rails_app
 
+RUN (cd /rails_app && git log --format="%H" -n 1 > revision.txt)
+
 COPY docker/supervisor.conf /etc/supervisor/conf.d/messenger.conf
 
 ENV RAILS_ENV $RAILS_ENV
