@@ -12,6 +12,7 @@ step results in 'messenger' RNA (mRNA) that is template for protien synthesis th
 
 Transcription comes first, then the messenger, then a legible and useful result!
 
+Messenger uses the [JSONAPI](http://jsonapi.org/) spec throughout.
 
 Here are the pieces:
 
