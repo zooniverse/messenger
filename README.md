@@ -1,5 +1,7 @@
 # Messenger
 
+[![Build Status](https://travis-ci.org/zooniverse/messenger.svg?branch=master)](https://travis-ci.org/zooniverse/messenger)
+
 Messenger is a Rails API that stores aggregated text transcriptions, allowing researchers to 
 review, accept, and reject consensus transcriptions. It authenticates with the 
 [Panoptes API](https://zooniverse.org): only project owners and collaborators 
@@ -89,7 +91,7 @@ A Panoptes project.  `Project#id` is consistent with Panoptes project ids and sh
 <details>
 <summary><strong>POST /projects</strong></summary>
 
-- Accessible by project owners, collaborators, and site admins
+- Accessible by project owners, collaborators, and site admins. The id will be the same as the project's Panoptes id, `slug` is the only required parameter.
 
 ##### Schema
 

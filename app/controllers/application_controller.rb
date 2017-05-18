@@ -82,9 +82,7 @@ class ApplicationController < ActionController::Base
 
   def set_roles
     return unless current_user
-    current_user.roles = Rails.cache.fetch("#{ current_user.id }_roles", expires_in: 2.hours) do
-      panoptes_client.roles current_user.id
-    end
+    current_user.roles = panoptes_client.roles current_user.id
   end
 
   def panoptes_client
