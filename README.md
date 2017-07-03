@@ -348,3 +348,6 @@ A text transcription of a Panoptes subject.
 - Accessible by project owners, collaborators, and site admins
 </details>
 
+## How To Use Messenger, for Front End Developers
+
+A supporting guide has been prepared for front end developers wishing to use the Messenger service: [README-FRONT-END-DEV.md](README-FRONT-END-DEV.md)
