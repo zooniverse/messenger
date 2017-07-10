@@ -15,7 +15,7 @@ gem 'json-schema_builder', "~> 0.0"
 gem 'kaminari', "~> 1.0"
 gem 'jwt', "~> 1.5"
 gem 'pundit', "~> 1.1"
-gem 'rollbar', "~> 2.15"
+gem 'rollbar'
 
 gem 'panoptes-client', "~> 0.3"
 
