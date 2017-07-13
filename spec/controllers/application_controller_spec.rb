@@ -17,7 +17,6 @@ RSpec.describe ApplicationController, type: :controller do
 
     it 'returns the revision' do
       get :root, format: :json_api
-      binding.pry
     end
   end
 
