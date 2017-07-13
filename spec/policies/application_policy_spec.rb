@@ -29,11 +29,12 @@ RSpec.describe ApplicationPolicy, type: :policy do
           3 => ['tester'],
           4 => ['collaborator'],
           5 => ['nobody'],
-          6 => ['owner', 'collaborator']
+          6 => ['owner', 'collaborator'],
+          7 => ['expert']
         }
       end
 
-      it{ is_expected.to eql [2, 4, 6] }
+      it{ is_expected.to eql [2, 4, 6, 7] }
     end
   end
 

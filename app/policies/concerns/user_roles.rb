@@ -4,7 +4,7 @@ module UserRoles
   def privileged_project_ids
     return [] unless user
     @privileged_project_ids ||= user.roles.select do |id, roles|
-      (roles & %w(owner collaborator)).any?
+      (roles & %w(owner collaborator expert)).any?
     end.keys
   end
 end

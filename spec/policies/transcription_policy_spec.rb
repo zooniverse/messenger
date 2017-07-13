@@ -29,6 +29,11 @@ RSpec.describe TranscriptionPolicy, type: :policy do
     it_behaves_like 'a policy permitting', :index, :show, :create, :update, :destroy
   end
 
+  context 'with a project expert' do
+    let(:user){ create :user, roles: { records.project.id => ['expert'] } }
+    it_behaves_like 'a policy permitting', :index, :show, :create, :update, :destroy
+  end
+
   describe TranscriptionPolicy::Scope do
     let(:project){ create :project }
     let!(:other_records){ create_list :transcription, 2 }
