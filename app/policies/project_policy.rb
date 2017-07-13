@@ -1,13 +1,13 @@
 class ProjectPolicy < ApplicationPolicy
   def create?
-    admin_or_project_owner?
+    admin_or_authorized?
   end
 
-  def admin_or_project_owner?
-    admin? || project_owner_or_collaborator?
+  def admin_or_authorized?
+    admin? || authorized?
   end
 
-  def project_owner_or_collaborator?
+  def authorized?
     return false if records.empty?
     records.compact.all? do |record|
       privileged_project_ids.include? record.id
