@@ -8,7 +8,7 @@ end
 gem 'rails', "~> 5.1"
 gem 'puma', "~> 3.8"
 gem 'pg', "~> 0.20"
-gem 'rack-cors', "~> 0.4"
+gem 'rack-cors', "~> 1.0"
 gem 'active_model_serializers', "~> 0.10"
 gem 'json-schema', "~> 2.8"
 gem 'json-schema_builder', "~> 0.0"
